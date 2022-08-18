@@ -1,0 +1,646 @@
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: local('montserrat'),
+         url('./font/montserrat-regular-webfont.woff2'), format('woff2');
+}
+
+.container {
+    width: 80%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-areas: 
+    'profile profile profile'
+    'skills experiences experiences'
+    'hobbies experiences experiences'
+    'hobbies project project'
+    'allProject allProject allProject'
+    'createdby createdby createdby';
+    gap: 15px;
+}
+
+/* css for profile */
+
+.profile {
+    grid-area: profile;
+    display: grid;
+    grid-template-areas: 'profilePic profileData';
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+}
+
+.profilePic {
+    grid-area: profilePic;
+    max-width: 250px;
+    border-radius: 12px;
+}
+
+.profileData {
+    grid-area: profileData;
+    font-family: 'montserrat', sans-serif;
+    padding-left: 22px;
+}
+
+.data1 {
+    display: flex;
+}
+
+.data2 {
+    display: flex;
+}
+
+.name {
+    width: 50%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4f4f4f;
+}
+
+.email, .position, .phone, .data3 {
+    width: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #828282;
+}
+
+.email {
+    margin-top: 5px;
+}
+
+.data3 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* css for skills */
+
+.skills {
+    grid-area: skills;
+    font-family: 'montserrat', sans-serif;
+    padding: 22px;
+    color: #4f4f4f;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+}
+
+.skillTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 15px;
+}
+
+.skillDetails {
+    display: flex;
+    gap: 10px;
+}
+
+.skillDescriptions {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.description {
+    margin-bottom: 3px;
+}
+
+.skill1 {
+    position: relative;
+}
+
+.bar {
+    width: 236px;
+    background-color: #c4c4c4;
+    color: #c4c4c4;
+    border-radius: 5px;
+    height: 0.75rem;
+    font-size: 2px;
+    margin-bottom: 10px;
+}
+
+.bar1, .bar2, .bar3, .bar4 {
+    background-color: #2f80ed;
+    color: #2f80ed;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -22px;
+    height: 0.75rem;
+    font-size: 2px;
+}
+
+.bar1 {
+    width: 155px;
+}
+
+.bar2 {
+    width: 198px;
+}
+
+.bar3 {
+    width: 218px;
+}
+
+.bar4 {
+    width: 153px;
+}
+
+/* css for blog */
+
+.blog {
+    grid-area: blog;
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+    font-family: 'montserrat', sans-serif;
+}
+
+.bSection1 {
+    display: flex;
+}
+
+.blogName, .bSection2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #e0e0e0;
+}
+
+.blogTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #333333;
+    width: 178px;
+    margin-top: 10px;
+}
+
+.blogPic {
+    max-width: 300px;
+    margin-left: 205px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.bSection2 {
+    padding-right: 22px;
+    margin-top: 10px;
+    color: #828282;
+}
+
+.blogFooter {
+    color: #2f80ed;
+    margin-top: 30px;
+}
+
+/* css for hobbies */
+
+.hobbies {
+    grid-area: hobbies;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+    font-family: 'montserrat', sans-serif;
+}
+
+.hobbiesTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+
+}
+
+.hobbyPic {
+    max-width: 200px;
+    border-radius: 12px;
+}
+
+.hobby1, .hobby2, .hobby3 {
+    display: flex;
+    margin-bottom: 22px;
+    gap: 15px;
+}
+
+.hobby {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.hobbyDetail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #828282;
+}
+
+/* css for experiences */
+
+.experiences {
+    grid-area: experiences;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+    font-family: 'montserrat', sans-serif;
+}
+
+.experiencesTitle {
+    margin-bottom: 25px;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4f4f4f;
+}
+
+.experience {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.logo {
+    max-width: 119px;
+    padding: 15px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+}
+
+.experienceDate {
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #828282;
+    margin-bottom: 10px;
+}
+
+.experiencePosition {
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.experienceTask {
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #828282;
+}
+
+/* css for projects */
+
+.projects {
+    grid-area: project;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+    font-family: 'montserrat', sans-serif;
+    color: #4f4f4f;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projectTitle {
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 15px;
+}
+
+.projectButtons {
+    display: flex;
+    gap: 22px;
+}
+
+.button {
+    border: 1px solid #4f4f4f;
+    font-size: 14px;
+    line-height: 17.07px;
+    text-align: center;
+    width: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid #2f80ed;
+    background-color: #2f80ed;
+    color: white;
+    border: #2f80ed;
+}
+
+/* css for All Projects */
+
+.allProjects {
+    grid-area: allProject;
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+
+.responsive, .react {
+    max-width: 300px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0.01px grey;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.pPic {
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+}
+
+.tags {
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #4f4f4f;
+    display: flex;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pTitle {
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.pDescription {
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #828282;
+    margin-bottom: 30px;
+}
+
+.pButton {
+    font-size: 14px;
+    line-height: 17.07px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    gap: 22px;
+}
+
+.bDemo {
+    border: 1px solid #2f80ed;
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    width: 80px;
+}
+
+.bDemo:hover {
+    border: 1px solid #2f80ed;
+    background-color: white;
+    color: #2f80ed;
+}
+
+.bCode {
+    border: 1px solid #2f80ed;
+    background-color: white;
+    color: #2f80ed;
+    border-radius: 12px;
+    padding: 10px;
+    width: 80px;
+}
+
+.bCode:hover {
+    border: 1px solid #2f80ed;
+    background-color: #2f80ed;
+    color: white;
+}
+
+/* css for created by */
+
+.created {
+    grid-area: createdby;
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 17.07px;
+    text-align: center;
+    color: #828282;
+    margin-top: 178px;
+    margin-bottom: 35px;
+}
+
+.nama {
+    color: inherit;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+
+/* media query */
+@media (max-width:600px) {
+    .container {
+        width: 80%;
+        margin: 15px auto;
+        grid-template-areas: 
+        'profile'
+        'skills'
+        'hobbies'
+        'experiences'
+        'project'
+        'allProject'
+        'createdby';
+    }   
+
+    /* css for profile */
+
+    .profile {
+        grid-template-areas: 
+        'profilePic'
+        'profileData';
+        gap: 15px;
+    }
+
+    .profilePic {
+        max-width: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .profileData {
+        padding-left: 0px;
+    }
+
+    .name {
+        width: 50%;
+        font-size: 18px;
+        line-height:21.94px;
+    }
+
+    .email, .position, .phone, .data3 {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .email {
+        margin-top: -10px;
+    }
+
+    .phone {
+        margin-top: -10px;
+    }
+
+    .data3 {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    i {
+        width: .1rem;
+        left: -20px;
+    }
+
+    /* css for skills */
+
+    .skillTitle {
+        font-size: 16px;
+        line-height: 19.05px;
+        margin-bottom: 10px;
+    }
+
+    .skillDescriptions {
+        font-size: 14px;
+    }
+
+    .bar {
+        height: 0.5rem;
+        margin-bottom: 15px;
+    }
+
+    .bar1, .bar2, .bar3, .bar4 {
+        margin-top: -23px;
+        height: 0.5rem;
+    }
+
+    /* css for blog */
+
+    .blogName, .bSection2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .blogTitle {
+        font-size: 18px;
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .blogPic {
+        max-width: 222px;
+        margin-left: 0px;
+    }
+
+    /* css for hobbies */
+
+    .hobbiesTitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .hobby {
+        font-size: 16px;
+    }
+
+    .hobbyDetail {
+        font-size: 14px;
+    }
+
+    /* css for experiences */
+
+    .experiencesTitle {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 130px;
+        padding: 0px;
+        padding-bottom: 80px;
+    }
+
+    .experienceDate {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .experiencePosition {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .experienceTask {
+        font-size: 14px;
+    }
+
+    /* css for projects */
+
+    .projectTitle {
+        font-size: 16px;
+    }
+
+    /* css for All Projects */
+
+    .responsive, .react {
+        max-width: 350px;
+    }
+
+    .pPic {
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .tags {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .pTitle {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .pDescription {
+        font-size: 14px;
+    }
+
+    /* css for created by */
+
+    .created {
+        margin-top: 100px;
+    }
+}
