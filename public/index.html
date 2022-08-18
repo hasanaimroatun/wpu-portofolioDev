@@ -1,89 +1,299 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.9.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+</head>
+<body>
+    <div class="container">
+        <!-- html for profile -->
+        <div class="profile">
+            <img src="./pic/profile2.png" alt="Rodney Cotton" class="profilePic">
+            <div class="profileData">
+                <div class="data">
+                    <div class="data1">
+                        <div class="name">Imroatun Hasana</div>
+                        <div class="email">
+                            <i class="material-icons" style="position: relative; top: 5px;">mail</i>
+                            imroatunhasana@gmail.com
+                        </div>
+                    </div>
+                    <div class="data2">
+                        <div class="position">Front-end developer</div>
+                        <div class="phone">
+                            <i class="material-icons" style="position: relative; top: 5px;">call</i>
+                            (+62) 123 456 789
+                        </div>
+                    </div>
+                </div>
+                <div class="data3">
+                    <div>Self-motivated developer, who is willing to learn and create outstanding UI applications.</div>
+                    <br/>
+                    <div>Ready to help team achieve company goals. To seek and maintain full-time position that offers professional challenges utilizing interpersonal skills, excellent time management and problem-solving skills.</div>
+                </div>
+            </div>
+        </div>
+        <!-- html for skills -->
+        <div class="skills">
+            <div class="skillTitle">
+                FRONT END
+            </div>
+            <div class="skillDetails">
+                <div class="skillDescriptions">
+                    <div class="description">React</div>
+                    <div class="description">Javascript</div>
+                    <div class="description">CSS</div>
+                    <div class="description">Bootstrap</div>
+                </div>
+                <div class="'skillBars'">
+                    <div class="skill1">
+                        <div class="bar">bar</div>
+                        <div class="bar1">progress</div>
+                    </div>
+                    <div class="skill2">
+                        <div class="bar">bar</div>
+                        <div class="bar2">progress</div>
+                    </div>
+                    <div class="skill3">
+                        <div class="bar">bar</div>
+                        <div class="bar3">progress</div>
+                    </div>
+                    <div class="skill4">
+                        <div class="bar">bar</div>
+                        <div class="bar4">progress</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- html for blog -->
+        <!-- <div class="blog">
+            <div class="bSection1">
+                <div class="blogDescription">
+                    <div class="blogName">Blog</div>
+                    <div class="blogTitle">How to organize your CSS</div>
+                </div>
+                <img src="./pic/blog.png" alt="blog pic" class="blogPic">
+            </div>
+            <div class="bSection2">
+                <div>
+                    In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.  
+                </div>
+                <br>
+                <div>
+                    Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+                </div>
+                <div class="blogFooter">
+                    dev.to
+                </div>
+            </div>
+        </div> -->
+        <!-- html for hobbies -->
+        <div class="hobbies">
+            <div class="hobbiesTitle">Hobbies</div>
+            <div class="hobby1">
+                <img src="./pic/hobi1.png" alt="Painting" class="hobbyPic">
+                <div class="hobbyDescription">
+                    <div class="hobby">Painting</div>
+                    <div class="hobbyDetail">Painting can develops the creativity</div>
+                </div>
+            </div>
+            <div class="hobby2">
+                <img src="./pic/hobi2.png" alt="Gardening" class="hobbyPic">
+                <div class="hobbyDescription">
+                    <div class="hobby">Gardening</div>
+                    <div class="hobbyDetail">Gardening can regulates mood, anxiety, and happiness</div>
+                </div>
+            </div>
+            <div class="hobby3">
+                <img src="./pic/hobi3.png" alt="Reading Novels" class="hobbyPic">
+                <div class="hobbyDescription">
+                    <div class="hobby">Reading Novels</div>
+                    <div class="hobbyDetail">Reading novels can improves a capacity to understand what others are thinking and feeling</div>
+                </div>
+            </div>
+        </div>
+        <!-- html for experiences -->
+        <div class="experiences">
+            <div class="experiencesTitle">Experiences</div>
+            <div class="experience">
+                <img src="./pic/ssc logo.png" alt="Adidas Logo" class="logo">
+                <div class="experienceDetail">
+                    <div class="experienceDate">
+                        Jan 2019 - Sept 2019
+                    </div>
+                    <div class="experiencePosition">
+                        Front Desk Receptionist
+                    </div>
+                    <div class="experienceTask">
+                        Maintained files and records by implementing effective filing systems that boosted efficiency and organization.
+                        Resolved customer issues quickly and notified supervisor immediately when problems escalated.
+                    </div>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="./pic/ssc logo.png" alt="Hennes Logo" class="logo">
+                <div class="experienceDetail">
+                    <div class="experienceDate">
+                        Jan 2018 - Sept 2019
+                    </div>
+                    <div class="experiencePosition">
+                        Biology Tutor
+                    </div>
+                    <div class="experienceTask">
+                        Reinforced concepts of basic and upper-level biology courses by searching for gaps in learning.
+                        Created skill-based assessments to test student mastery of required skills of focus.
+                    </div>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="./pic/g2 logo.png" alt="Nivea Logo" class="logo">
+                <div class="experienceDetail">
+                    <div class="experienceDate">
+                        Nov 2017 - Jan 2019
+                    </div>
+                    <div class="experiencePosition">
+                        Biology Tutor
+                    </div>
+                    <div class="experienceTask">
+                        Reinforced concepts of basic and upper-level biology courses by searching for gaps in learning.
+                        Created skill-based assessments to test student mastery of required skills of focus.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- html for projects -->
+        <div class="projects">
+            <div class="projectTitle">
+                Projects (5)
+            </div>
+            <div class="projectButtons">
+                <div class="button">
+                    All Projects
+                </div>
+                <div class="button">
+                    React
+                </div>
+                <div class="button">
+                    Responsive
+                </div>
+            </div>
+        </div>
+        <div class="allProjects">
+            <!-- html for project1 -->
+            <div class="responsive">
+                <img src="./pic/404notFound.png" alt="404 Not Found" class="pPic">
+                <div class="tags">
+                    <div><a href="https://github.com/hasanaimroatun/404new/blob/main/index.html">#HTML</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/404new/blob/main/css/style.css">#CSS</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/404new/blob/main/css/style.css">#responsive</a></div>
+                </div>
+                <div class="pTitle">
+                    404 Not Found
+                </div>
+                <div class="pDescription">
+                    In this project, I work with HTML and CSS to create a responsive page . 
+                    The design is from devchallenge.io. 
+                    In this page, you can see 404 page not found detail with home page button.
+                </div>
+                <div class="pButton">
+                    <a href="https://not-found-challenge-fd107.web.app" class="bDemo">Demo</a>
+                    <a href="https://github.com/hasanaimroatun/404new" class="bCode">Code</a>
+                </div>
+            </div>
+            <!-- html for project2 -->
+            <div class="responsive">
+                <img src="./pic/myGallery.png" alt="My Gallery" class="pPic">
+                <div class="tags">
+                    <div><a href="https://github.com/hasanaimroatun/wpu-myGalleryChallenge/blob/main/index.html">#HTML</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-myGalleryChallenge/blob/main/css/style.css">#CSS</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-myGalleryChallenge/blob/main/css/style.css">#responsive</a></div>
+                </div>
+                <div class="pTitle">
+                    My Gallery
+                </div>
+                <div class="pDescription">
+                    In this project, I work with HTML and CSS to create a responsive page . 
+                    The design is from devchallenge.io. 
+                    In this page, you can see the gallery with profile details, number of posts, followers, and following.
+                </div>
+                <div class="pButton">
+                    <a href="https://my-gallery-challenge-8d18e.web.app" class="bDemo">Demo</a>
+                    <a href="https://github.com/hasanaimroatun/wpu-myGalleryChallenge" class="bCode">Code</a>
+                </div>
+            </div>
+            <!-- html for project3 -->
+            <div class="responsive">
+                <img src="./pic/teamPage.png" alt="Team Page" class="pPic">
+                <div class="tags">
+                    <div><a href="https://github.com/hasanaimroatun/wpu-TeamPageChallenge/blob/main/index.html">#HTML</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-TeamPageChallenge/blob/main/css/style.css">#CSS</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-TeamPageChallenge/blob/main/css/style.css">#responsive</a></div>
+                </div>
+                <div class="pTitle">
+                    Team Page
+                </div>
+                <div class="pDescription">
+                    In this project, I work with HTML and CSS to create a responsive page . 
+                    The design is from devchallenge.io. 
+                    In this page, you can see the team creative crew with profile photo, name, and position.
+                </div>
+                <div class="pButton">
+                    <a href="https://team-page-challenge-c263b.web.app" class="bDemo">Demo</a>
+                    <a href="https://github.com/hasanaimroatun/wpu-TeamPageChallenge" class="bCode">Code</a>
+                </div>
+            </div>
+            <div class="react">
+                <img src="./pic/quote.png" alt="Quote Generator" class="pPic">
+                <div class="tags">
+                    <div><a href="https://github.com/hasanaimroatun/wpu-randomQuotes/blob/master/public/index.html">#HTML</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-randomQuotes/blob/master/src/components/myStyle.css">#CSS</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-randomQuotes">#react</a></div>
+                </div>
+                <div class="pTitle">
+                    Random Quote Generator
+                </div>
+                <div class="pDescription">
+                    In this project, I work with HTML, CSS, and javascript in React to create a responsive page. 
+                    The design is from devchallenge.io. This page generate a new random quote with quote genre under the author. 
+                    When you select quote author, you can see a list of quotes from them.
+                </div>
+                <div class="pButton">
+                    <a href="https://random-quotes-challenge.web.app" class="bDemo">Demo</a>
+                    <a href="https://github.com/hasanaimroatun/wpu-randomQuotes" class="bCode">Code</a>
+                </div>
+            </div>
+            <div class="react">
+                <img src="./pic/windbnb.png" alt="Wind bnb" class="pPic">
+                <div class="tags">
+                    <div><a href="https://github.com/hasanaimroatun/wpu-windbnbChallenge2/blob/master/public/index.html">#HTML</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-windbnbChallenge2/blob/master/src/components/myStyle.css">#CSS</a></div>
+                    <div><a href="https://github.com/hasanaimroatun/wpu-windbnbChallenge2">#react</a></div>
+                </div>
+                <div class="pTitle">
+                    Windbnb
+                </div>
+                <div class="pDescription">
+                    In this project, I work with HTML, CSS, and Javascript in React to create a responsive page. The design is from devchallenge.io. 
+                    This page consist of apartment lists in Findland with details: name, rating, apartment type, and super host. 
+                    You can filter the location and number of guests with the given button.
+                </div>
+                <div class="pButton">
+                    <a href="https://wind-bnb-challenge.web.app" class="bDemo">Demo</a>
+                    <a href="https://github.com/hasanaimroatun/wpu-windbnbChallenge2" class="bCode">Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- html for created by -->
+        <div class='created'>
+            created by <a href="https://github.com/hasanaimroatun/wpu-portofolioDev" class="nama">hasanaimroatun</a> - devChallenges.io
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
