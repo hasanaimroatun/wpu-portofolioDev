@@ -15,10 +15,9 @@
     display: grid;
     grid-template-areas: 
     'profile profile profile'
-    'skills blog blog'
-    'hobbies blog blog'
+    'skills experiences experiences'
     'hobbies experiences experiences'
-    'project project project'
+    'hobbies project project'
     'allProject allProject allProject'
     'createdby createdby createdby';
     gap: 15px;
@@ -276,6 +275,7 @@
     max-width: 119px;
     padding: 15px;
     box-sizing: border-box;
+    padding-bottom: 60px;
 }
 
 .experienceDate {
@@ -348,7 +348,7 @@
 .allProjects {
     grid-area: allProject;
     display: flex;
-    gap: 25px;
+    gap: 23px;
     flex-wrap: wrap;
 }
 
@@ -470,7 +470,6 @@ a {
         grid-template-areas: 
         'profile'
         'skills'
-        'blog'
         'hobbies'
         'experiences'
         'project'
@@ -591,6 +590,7 @@ a {
     .logo {
         width: 130px;
         padding: 0px;
+        padding-bottom: 80px;
     }
 
     .experienceDate {
